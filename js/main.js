@@ -277,15 +277,61 @@
 			event.preventDefault();
 
 			$('html,body').animate({
-				scrollTop: $('.goto-here').offset().top
+				scrollTop: $('#about-section').offset().top -75
 			}, 500, 'easeInOutExpo');
 			
 			return false;
 		});
+
+		$('li a[href^="#about-section"]').on('click', function(event){
+			
+			event.preventDefault();
+
+			$('html,body').animate({
+				scrollTop: $('#about-section').offset().top -75
+			}, 500, 'easeInOutExpo');
+		});
+
+		$('li a[href^="#resume-section"]').on('click', function(event){
+			
+			event.preventDefault();
+
+			$('html,body').animate({
+				scrollTop: $('#resume-section').offset().top -75
+			}, 500, 'easeInOutExpo');
+		});
+
+		$('li a[href^="#projects-section"]').on('click', function(event){
+			
+			event.preventDefault();
+
+			$('html,body').animate({
+				scrollTop: $('#projects-section').offset().top -75
+			}, 500, 'easeInOutExpo');
+		});
+
+		$('li a[href^="#contact-section"]').on('click', function(event){
+			
+			event.preventDefault();
+
+			$('html,body').animate({
+				scrollTop: $('#contact-section').offset().top -75
+			}, 500, 'easeInOutExpo');
+		});
+
+		$('li a[href^="#home"]').on('click', function(event){
+			
+			event.preventDefault();
+
+			$('html,body').animate({
+				scrollTop: $('#').offset().top -75
+			}, 500, 'easeInOutExpo');
+		});
+
 	};
 	goHere();
 
-	// $("#myScrollspy").scrollspy({ offset: -75 });
+	$("#about-section").scrollspy({ offset: -75 });
 
 
 
